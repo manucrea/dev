@@ -98,8 +98,30 @@
         </div>
       </header>
 
+      <div id="navigation">
+        <div class="row align-center">
+          <div class="small-12 medium-9 large-9 columns">
+            <div class="row align-middle">
+              <div class="small-2 columns">
+                <h1><a href="index.html"><img src="assets/svg/suncore.svg"></a></h1>
+              </div>
+              <div class="small-10 columns navMain">
+                <ul class="horizontal menu cl-effect-13" data-magellan>
+                  <li><a href="#home">Inicio</a></li>
+                  <li><a href="#servicios">Servicios</a></li>
+                  <li><a href="#proceso">Proceso de compra</a></li>
+                  <li><a href="#galeria">Galería</a></li>
+                  <li><a href="#acerca">Acerca de Suncore</a></li>
+                  <li><a href="#contacto">Contacto</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <!-- main content -->
-      <section id="home">
+      <section id="home" data-magellan-target="home">
         <div class="row align-center">
           <div class="small-12 large-8 columns">
             <img src="assets/img/temp-smart-city.png">
@@ -107,7 +129,7 @@
         </div>
       </section>
 
-      <section id="servicios">
+      <section id="servicios" data-magellan-target="servicios">
         <div class="row align-center text-center">
           <div class="small-12 medium-8 large-8 columns">
             <h2>Servicio en residencias y empresas</h2>
@@ -123,22 +145,26 @@
           </div>
         </div>
         <div class="row align-center text-center how-it-works">
-          <div class="small-12 medium-4 large-4 columns">
-            <img src="assets/img/servicios-icon1.png">
-            <p>Instalamos un sistema fotovoltaico, éste recibe la luz solar convirtiéndola en energía eléctrica.</p>
-          </div>
-          <div class="small-12 medium-4 large-4 columns">
-            <img src="assets/img/servicios-icon2.png">
-            <p>El Inversor convierte la energía directa para que la puedas usar.</p>
-          </div>
-          <div class="small-12 medium-4 large-4 columns">
-            <img src="assets/img/servicios-icon3.png">
-            <p>La producción excedente se distribuye hacia la red de CFE via el medidor bidireccional, misma que se regresará en horas de inactividad solar.</p>
+          <div class="small-12 medium-8 large-8 columns">
+            <div class="row">
+              <div class="small-12 medium-4 large-4 columns">
+                <img src="assets/img/servicios-icon1.png">
+                <p>Instalamos un sistema fotovoltaico, éste recibe la luz solar convirtiéndola en energía eléctrica.</p>
+              </div>
+              <div class="small-12 medium-4 large-4 columns">
+                <img src="assets/img/servicios-icon2.png">
+                <p>El Inversor convierte la energía directa para que la puedas usar.</p>
+              </div>
+              <div class="small-12 medium-4 large-4 columns">
+                <img src="assets/img/servicios-icon3.png">
+                <p>La producción excedente se distribuye hacia la red de CFE via el medidor bidireccional, misma que se regresará en horas de inactividad solar.</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
 
-      <section id="proceso">
+      <section id="proceso" data-magellan-target="proceso">
         <div class="row align-center text-center">
           <div class="small-12 medium-8 large-8 columns">
             <h2>Proceso de compra</h2>
@@ -154,7 +180,7 @@
         </div>
       </section>
 
-      <section id="galeria">
+      <section id="galeria" data-magellan-target="galeria">
         <div class="row align-center text-center">
           <div class="small-12 medium-8 large-8 columns">
             <h2>Galería</h2>
@@ -169,18 +195,116 @@
         </div>
       </section>
 
-      <section id="acerca">
-        <div class="row align-center">
-          <div class="small-12 large-12 columns">
-            
+      <section id="acerca" data-magellan-target="acerca">
+        <div class="row align-center text-center">
+          <div class="small-12 medium-8 large-8 columns">
+            <h2>Acerca de Suncore</h2>
+            <p>Entérate de lo último en eco-tecnologías</p>
+          </div>
+          <div class="spacer-s"></div>
+          <div class="small-12 medium-8 large-8 columns">
+            <p>
+              Somos una empresa dedicada a brindar soluciones energéticas mediante sistemas fotovoltaicos. Nuestro enfoque es reducir el costo de energía eléctrica en residencias, empresas y gobierno.
+            </p>
+            <p>
+              Reducimos el costo del recibo de luz hasta 99% con un alto retorno de inversión.<br>
+              Generamos energía solar fotovoltaica, limpia y renovable creando proyectos verdes que disminuyen la emisión de dióxido de carbono.
+            </p>
+            <p>
+              Nos convertimos en los mejores aliados de nuestros clientes ya que en algunos casos, además de ahorrar en el gasto de energía eléctrica, <b>impactamos en el ahorro de los recibos de agua y predial, al mismo tiempo que incrementa el valor del inmueble.</b>
+            </p>
+          </div>
+          <div class="spacer"></div>
+          <div class="small-12 medium-8 large-8 columns">
+            <h2>Nuestros Clientes<br> y Socios Comerciales</h2>
+            <p><img src="assets/img/logos-clientes.png"></p>
           </div>
         </div>
       </section>
 
-      <section id="contacto">
+      <section id="contacto" data-magellan-target="contacto">
         <div class="row align-center">
-          <div class="small-12 large-12 columns">
-            
+          <div class="small-12 medium-8 large-8 columns">
+            <div class="row align-center">
+              <div class="small-12 medium-6 large-6 columns leftInfo">
+                <p><img src="assets/svg/suncore.svg"></p>
+                <ul>
+                  <li class="address">
+                    Periferico Sur 3343 PB, Col. Jardines del Lídice,<br> Del. Magdalena Contreras, C.P.10200 Ciudad de México.
+                  </li>
+                  <li class="phone">
+                    +52 (55) 70948137<br>
+                    +52 (55) 70948127
+                  </li>
+                  <li class="mail">
+                    contacto@suncore.com.mx
+                  </li>
+                </ul>
+                <p>® Derechos Reservados Suncore 2016</p>
+              </div>
+              <div class="small-12 medium-6 large-6 columns rightInfo">
+                <h4>Contáctanos</h4>
+                <p>SOLICITA TU COTIZACIÓN</p>
+                <p>Reduce tu gasto de luz hasta un 99%</p>
+                <div class="row align-center">
+                  <div class="small-12 medium-9 large-9 columns">
+                    <form data-abide novalidate>
+                      <div data-abide-error class="alert callout" style="display: none;">
+                        <p><i class="fi-alert"></i> Hay algunos errores en el formulario.</p>
+                      </div>
+                      <div class="row">
+                        <div class="small-12 columns">
+                          <label>
+                            <input type="text" placeholder="Nombre" required>
+                            <span class="form-error">
+                              No es un nombre válido.
+                            </span>
+                          </label>
+                        </div>
+                        <div class="small-12 columns">
+                          <label>
+                            <input type="email" placeholder="Email" required>
+                            <span class="form-error">
+                              Ingresa un email válido.
+                            </span>
+                          </label>
+                        </div>
+                        <div class="small-12 columns">
+                          <label>
+                            <input type="tel" placeholder="Teléfono" required>
+                            <span class="form-error">
+                              Ingresa un teléfono válido.
+                            </span>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <fieldset class="large-12 columns">
+                          <button class="button" type="submit" value="Submit">Enviar</button>
+                        </fieldset>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <div class="row align-center">
+                  <div class="small-3 columns">
+                    <a href="https://twitter.com/Suncore_Oficial" target="_blank">
+                      <i class="fa fa-twitter" aria-hidden="true"></i> Twitter
+                    </a>
+                  </div>
+                  <div class="small-3 columns">
+                    <a href="https://www.facebook.com/Suncore-259763410848658/" target="_blank">
+                      <i class="fa fa-facebook" aria-hidden="true"></i> Facebook
+                    </a>
+                  </div>
+                  <!-- <div class="small-3 columns">
+                    <a href="#" target="_blank">
+                      <i class="fa fa-rss" aria-hidden="true"></i> RSS
+                    </a>
+                  </div> -->
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -17,10 +17,21 @@ $white: #F1F1F1;
 $gray: #717171;
 $blue: #194567;
 $hard-blue: #265677;
-$base-aqua: #5cadb9;
+$base-aqua: #4ba2af;
 $hard-gray: #2d2d2d;
 $light-gray: #ebebeb;
 $light: #f7f7f7;
+
+@mixin smooth {
+  transition: all .3s;
+  -moz-transition: all .3s;
+  -webkit-transition: all .3s;
+  -o-transition: all .3s;
+  -ms-transition:all .3s;
+}
+a {
+	@include smooth;
+}
 
 .ip-header {
 	position: fixed;
@@ -286,6 +297,12 @@ $light: #f7f7f7;
 .spacer {
 	height: 10vh;
 	display: block;
+	width: 100%;
+}
+.spacer-s {
+	height: 5vh;
+	display: block;
+	width: 100%;
 }
 
 section {
@@ -299,6 +316,7 @@ section {
   background-attachment: fixed;
   background-size: cover;
 	padding-top: 15vh;
+	height: 100vh;
 }
 
 #servicios {
@@ -404,4 +422,181 @@ section {
 
 #contacto {
 	background-color: $hard-gray;
+	padding-top: 5vh;
+	padding-bottom: 5vh;
+	.leftInfo {
+		color: $white;
+		img {
+			max-width: 18vh;
+		}
+		ul {
+			margin: 8vh 0 8vh 5vh;
+			position: relative;
+			li{
+			  	list-style: none;
+	  	    font-size: 1.75vh;
+	  	    margin-bottom: 1.75vh;
+	  	    position: relative;
+				&:before {
+				  content: '';
+		      display: inline-block;
+		      height: 3.5vh;
+		      width: 3.5vh;
+		      background-repeat: no-repeat;
+		      background-size: contain;
+		      position: absolute;
+		      left: -4.25vh;
+				}
+				&.address:before {
+					background-image: url('../assets/svg/icon-address.svg');
+				}
+				&.phone:before {
+					background-image: url('../assets/svg/icon-phone.svg');
+				}
+				&.mail:before {
+					background-image: url('../assets/svg/icon-mail.svg');
+				}
+			}
+		}
+		p {
+			font-size: 1.75vh;
+		}
+	}
+	.rightInfo {
+		color: $white;
+		text-align: center;
+		p {
+			margin-bottom: 0;
+		}
+		form {
+			margin-top: 2vh;
+			input {
+				border-radius: 0.5vh;
+				border: none;
+			}
+			.button {
+				width: 100%;
+				background-color: $base-aqua;
+				border-radius: 0.5vh;
+				font-family: 'Raleway', sans-serif;
+				font-weight: 700;
+				&:hover {
+					background-color: darken( $base-aqua, 10% );
+				}
+			}
+		}
+		a {
+			color: $white;
+			font-size: 1.5vh;
+			&:hover {
+				color: $base-aqua;
+			}
+		}
+	}
+}
+
+#navigation {
+	position: absolute;
+	top: 90%;
+	width: 100%;
+	background-color: transparent;
+	z-index: 9;
+	h1 {
+		opacity: 0;
+		@include smooth;
+		img {
+			max-width: 20vh
+		}
+	}
+	&.fixed {
+		position: fixed;
+		background-color: $blue;
+		h1 {
+			opacity: 1;
+		}
+		top: 0;
+	}
+	.navMain {
+		text-align: right;
+		a {
+			font-size: 1.75vh;
+		}
+	}
+}
+
+.menu {
+	>li {
+		float: right;
+	}
+}
+
+/* Effect 5: same word slide in */
+
+.menu a {
+	position: relative;
+	outline: none;
+	text-decoration: none;
+}
+
+.menu a:hover,
+.menu a:focus {
+	outline: none;
+}
+
+/* Effect 13: three circles */
+.cl-effect-13 {
+	a {
+		-webkit-transition: color 0.3s;
+		-moz-transition: color 0.3s;
+		transition: color 0.3s;
+		color: $base-aqua;
+		&::before {
+			position: absolute;
+			top: 100%;
+			left: 50%;
+			color: transparent;
+			content: '•';
+			text-shadow: 0 0 transparent;
+			-webkit-transition: text-shadow 0.3s, color 0.3s;
+			-moz-transition: text-shadow 0.3s, color 0.3s;
+			transition: text-shadow 0.3s, color 0.3s;
+			-webkit-transform: translateX(-50%);
+			-moz-transform: translateX(-50%);
+			transform: translateX(-50%);
+			pointer-events: none;
+		}
+		&:hover {
+			&::before {
+				color: $base-aqua;
+				text-shadow: 10px 0 $base-aqua, -10px 0 $base-aqua;
+			}
+		}
+		// &:focus {
+		// 	&::before {
+		// 		color: $base-aqua;
+		// 		text-shadow: 10px 0 $base-aqua, -10px 0 $base-aqua;
+		// 	}
+		// }
+		&:hover {
+			color: $base-aqua;
+		}
+		// &:focus {
+		// 	color: $white;
+		// }
+		&.active {
+			color: $white;
+			&:hover {
+				&::before {
+					color: $white;
+					text-shadow: 10px 0 $white, -10px 0 $white;
+				}
+			}
+			// &:focus {
+			// 	&::before {
+			// 		color: $white;
+			// 		text-shadow: 10px 0 $white, -10px 0 $white;
+			// 	}
+			// }
+		}
+	}
 }
