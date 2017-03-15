@@ -7,9 +7,10 @@
     <title>Suncore | Solar Energy</title>
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/animate.css">
     <script src="js/modernizr.custom.js"></script>
   </head>
-  <body class="charged">
+  <body class="charged is-animating">
     <div id="ip-container" class="ip-container">
       <!-- initial header -->
       <header class="ip-header">
@@ -131,31 +132,31 @@
 
       <section id="servicios" data-magellan-target="servicios">
         <div class="row align-center text-center">
-          <div class="small-12 medium-8 large-8 columns">
-            <h2>Servicio en residencias y empresas</h2>
-            <p class="aqua">Te ofrecemos la oportunidad de generar tu propia energía eléctrica<br> con un sistema fotovoltaico a un costo mucho más bajo.</p>
+          <div class="small-12 medium-8 large-8 columns transitions">
+            <h2 class="wow fadeInUp" data-wow-duration="1s">Servicio en residencias y empresas</h2>
+            <p class="aqua wow fadeInDown" data-wow-duration="1s">Te ofrecemos la oportunidad de generar tu propia energía eléctrica<br> con un sistema fotovoltaico a un costo mucho más bajo.</p>
             <div class="spacer"></div>
-            <img src="assets/img/solar-panel.png">
+            <img src="assets/img/solar-panel.png" class="wow zoomIn" data-wow-duration="1s">
           </div>
         </div>
         <div class="spacer"></div>
         <div class="row align-center text-center">
           <div class="small-12 medium-8 large-8 columns">
-            <h2>¿Cómo funciona?</h2>
+            <h2 class="wow fadeInDown" data-wow-duration="1s">¿Cómo funciona?</h2>
           </div>
         </div>
         <div class="row align-center text-center how-it-works">
           <div class="small-12 medium-8 large-8 columns">
             <div class="row">
-              <div class="small-12 medium-4 large-4 columns">
+              <div class="small-12 medium-4 large-4 columns wow fadeInRight" data-wow-duration="1s" data-wow-offset="10">
                 <img src="assets/img/servicios-icon1.png">
                 <p>Instalamos un sistema fotovoltaico, éste recibe la luz solar convirtiéndola en energía eléctrica.</p>
               </div>
-              <div class="small-12 medium-4 large-4 columns">
+              <div class="small-12 medium-4 large-4 columns wow fadeIn" data-wow-duration="1s">
                 <img src="assets/img/servicios-icon2.png">
                 <p>El Inversor convierte la energía directa para que la puedas usar.</p>
               </div>
-              <div class="small-12 medium-4 large-4 columns">
+              <div class="small-12 medium-4 large-4 columns wow fadeInLeft" data-wow-duration="1s" data-wow-offset="10">
                 <img src="assets/img/servicios-icon3.png">
                 <p>La producción excedente se distribuye hacia la red de CFE via el medidor bidireccional, misma que se regresará en horas de inactividad solar.</p>
               </div>
@@ -167,13 +168,13 @@
       <section id="proceso" data-magellan-target="proceso">
         <div class="row align-center text-center">
           <div class="small-12 medium-8 large-8 columns">
-            <h2>Proceso de compra</h2>
-            <p>Así de fácil es obtener energía solar</p>
+            <h2 class="wow fadeInUp" data-wow-duration="1s">Proceso de compra</h2>
+            <p class="wow fadeInDown" data-wow-duration="1s">Así de fácil es obtener energía solar</p>
           </div>
         </div>
         <div class="spacer"></div>
         <div class="row align-center text-center">
-          <div class="small-12 medium-8 large-8 columns">
+          <div class="small-12 medium-8 large-8 columns wow fadeInDown" data-wow-duration="1s">
             <p><img src="assets/img/proceso-icon.png"></p>
             <p>Solicita tu cotización y mándanos tu último recibo de CFE.</p>
           </div>
@@ -183,13 +184,13 @@
       <section id="galeria" data-magellan-target="galeria">
         <div class="row align-center text-center">
           <div class="small-12 medium-8 large-8 columns">
-            <h2>Galería</h2>
-            <p>Conoce el trabajo que hemos realizado</p>
+            <h2 class="wow fadeInUp" data-wow-duration="1s">Galería</h2>
+            <p class="wow fadeInDown" data-wow-duration="1s">Conoce el trabajo que hemos realizado</p>
           </div>
         </div>
         <div class="spacer"></div>
         <div class="row align-center text-center">
-          <div class="small-12 medium-8 large-8 columns">
+          <div class="small-12 medium-8 large-8 columns wow flipInX" data-wow-duration="1s">
             <p><img src="assets/img/fakeslider.png"></p>
           </div>
         </div>
@@ -198,11 +199,11 @@
       <section id="acerca" data-magellan-target="acerca">
         <div class="row align-center text-center">
           <div class="small-12 medium-8 large-8 columns">
-            <h2>Acerca de Suncore</h2>
-            <p>Entérate de lo último en eco-tecnologías</p>
+            <h2 class="wow fadeInUp" data-wow-duration="1s">Acerca de Suncore</h2>
+            <p class="wow fadeInDown" data-wow-duration="1s">Entérate de lo último en eco-tecnologías</p>
           </div>
           <div class="spacer-s"></div>
-          <div class="small-12 medium-8 large-8 columns">
+          <div class="small-12 medium-8 large-8 columns wow slideInDown" data-wow-duration="1s">
             <p>
               Somos una empresa dedicada a brindar soluciones energéticas mediante sistemas fotovoltaicos. Nuestro enfoque es reducir el costo de energía eléctrica en residencias, empresas y gobierno.
             </p>
@@ -214,11 +215,6 @@
               Nos convertimos en los mejores aliados de nuestros clientes ya que en algunos casos, además de ahorrar en el gasto de energía eléctrica, <b>impactamos en el ahorro de los recibos de agua y predial, al mismo tiempo que incrementa el valor del inmueble.</b>
             </p>
           </div>
-          <div class="spacer"></div>
-          <div class="small-12 medium-8 large-8 columns">
-            <h2>Nuestros Clientes<br> y Socios Comerciales</h2>
-            <p><img src="assets/img/logos-clientes.png"></p>
-          </div>
         </div>
       </section>
 
@@ -226,7 +222,7 @@
         <div class="row align-center">
           <div class="small-12 medium-8 large-8 columns">
             <div class="row align-center">
-              <div class="small-12 medium-6 large-6 columns leftInfo">
+              <div class="small-12 medium-6 large-6 columns leftInfo wow slideInLeft" data-wow-duration="1s">
                 <p><img src="assets/svg/suncore.svg"></p>
                 <ul>
                   <li class="address">
@@ -242,7 +238,7 @@
                 </ul>
                 <p>® Derechos Reservados Suncore 2016</p>
               </div>
-              <div class="small-12 medium-6 large-6 columns rightInfo">
+              <div class="small-12 medium-6 large-6 columns rightInfo wow slideInRight" data-wow-duration="1s">
                 <h4>Contáctanos</h4>
                 <p>SOLICITA TU COTIZACIÓN</p>
                 <p>Reduce tu gasto de luz hasta un 99%</p>
@@ -312,6 +308,8 @@
 
 
     </div><!-- /container -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
