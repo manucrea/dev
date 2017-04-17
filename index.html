@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" href="css/font-awesome.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/component.css"/>
+    <link rel="stylesheet" href="css/blueberry.css"/>
     <script src="js/modernizr.custom.js"></script>
   </head>
   <body class="charged is-animating">
@@ -15,6 +17,7 @@
       <!-- initial header -->
       <header class="ip-header">
         <h1 class="ip-logo">
+          <a href="index.html">
           <svg class="ip-inner" width="100%" height="100%" viewBox="0 0 300 160" preserveAspectRatio="xMidYMin meet" aria-labelledby="logo_title">
             <title id="logo_title">Suncore | Solar Energy</title>
             <g>
@@ -85,6 +88,7 @@
                 c0.2-2.5,1-4.4,2.2-5.8c1.3-1.3,2.9-2,5-2c2.1,0,3.7,0.7,4.9,2s1.8,3.2,1.8,5.8H324.9z"/>
             </g>
           </svg>
+          </a>
         </h1>
         <div class="ip-social">
           <div class="cta">¡Llámanos ahora! <b>7094.8137 / 7094.8127</b></div>
@@ -101,7 +105,7 @@
 
       <div id="navigation">
         <div class="row align-center">
-          <div class="small-12 medium-9 large-9 columns">
+          <div class="small-12 medium-12 large-12 columns">
             <div class="row align-middle">
               <div class="small-2 columns">
                 <h1><a href="index.html"><img src="assets/svg/suncore.svg"></a></h1>
@@ -109,7 +113,8 @@
               <div class="small-10 columns navMain">
                 <ul class="horizontal menu cl-effect-13" data-magellan>
                   <li><a href="#home">Inicio</a></li>
-                  <li><a href="#servicios">Servicios</a></li>
+                  <li><a href="#como-funciona">Cómo funciona</a></li>
+                  <li><a href="#sub-servs">Servicios</a></li>
                   <li><a href="#proceso">Proceso de compra</a></li>
                   <li><a href="#galeria">Galería</a></li>
                   <li><a href="#acerca">Acerca de Suncore</a></li>
@@ -123,47 +128,166 @@
 
       <!-- main content -->
       <section id="home" data-magellan-target="home">
+
+        
         <div class="row align-center">
           <div class="small-12 large-8 columns">
-            <img src="assets/img/temp-smart-city.png">
+            <!-- <img src="assets/img/temp-smart-city.png"> -->
+            <div class="info-intro text-center">
+              <h2>INSTALAMOS TU SISTEMA A LA MEDIDA</h2>
+              <h5>Comienza a ahorrar con <b>Paneles Solares</b></h5>
+              <p>
+                <a data-open="VideoModal"><img src="assets/svg/play.svg" id="play"></a>
+              </p>
+            </div>
+
+            <div class="blueberry text-center">
+              <ul class="slides">
+                <li><p>Compra o renta tu sistema</p></li>
+                <li><p><b>Ahorra hasta 99%</b> de tu recibo de luz</p></li>
+                <li><p>25 años de garantía</p></li>
+                <li><p>Mínimo mantenimiento</p></li>
+              </ul>
+            </div>
+
+            <div class="info-intro text-center" data-magellan>
+              <a href="#contacto" class="button">¡Cotiza gratis!</a>
+            </div>
+
           </div>
         </div>
+
+        <div id="video-bg">
+          <video muted autoplay id="bgvid" loop poster="assets/video/bg.png" preload="none">
+            <source src="assets/video/dron.webm" type="video/webm">
+            <source src="assets/video/dron.mp4" type="video/mp4">
+            <source src="assets/video/dron.ogv" type="video/ogg">
+          </video>
+        </div>
+        <div class="over-bg"></div>
+
+
       </section>
 
-      <section id="servicios" data-magellan-target="servicios">
-        <div class="row align-center text-center">
-          <div class="small-12 medium-8 large-8 columns transitions">
-            <h2 class="wow fadeInUp" data-wow-duration="1s">Servicio en residencias y empresas</h2>
-            <p class="aqua wow fadeInDown" data-wow-duration="1s">Te ofrecemos la oportunidad de generar tu propia energía eléctrica<br> con un sistema fotovoltaico a un costo mucho más bajo.</p>
-            <div class="spacer"></div>
-            <img src="assets/img/solar-panel.png" class="wow zoomIn" data-wow-duration="1s">
-          </div>
-        </div>
-        <div class="spacer"></div>
-        <div class="row align-center text-center">
+      <div class="medium reveal" id="VideoModal" data-reveal data-close-on-click="true" data-close-on-esc="true" data-reset-on-close="true" data-animation-in="scale-in-up">
+        
+        <iframe src="https://player.vimeo.com/video/210399987?autoplay=0&amp;title=0&amp;byline=0&amp;portrait=0" width="100%" height="100%" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+        
+        <button class="close-button" data-close aria-label="Close modal" type="button">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+
+      <section id="como-funciona" data-magellan-target="como-funciona">
+        <video muted autoplay id="bgvid" loop>
+          <source src="assets/video/base.mp4" type="video/mp4">
+          <source src="assets/video/base.ogv" type="video/ogv">
+        </video>
+
+        <div class="row align-center text-center info">
           <div class="small-12 medium-8 large-8 columns">
             <h2 class="wow fadeInDown" data-wow-duration="1s">¿Cómo funciona?</h2>
           </div>
         </div>
-        <div class="row align-center text-center how-it-works">
-          <div class="small-12 medium-8 large-8 columns">
+        <div class="row align-center info how-it-works">
+          <div class="small-12 medium-12 large-12 columns">
             <div class="row">
-              <div class="small-12 medium-4 large-4 columns wow fadeInRight" data-wow-duration="1s" data-wow-offset="10">
-                <img src="assets/img/servicios-icon1.png">
-                <p>Instalamos un sistema fotovoltaico, éste recibe la luz solar convirtiéndola en energía eléctrica.</p>
+              <div class="small-12 medium-4 large-4 columns wow fadeInRight" data-wow-duration="2s" data-wow-offset="10">
+                <div class="row">
+                  <div class="small-3 columns text-center">
+                    <img src="assets/img/servicios-icon1.png">
+                  </div>
+                  <div class="small-9 columns">
+                    <p>Instalamos un sistema fotovoltaico, éste recibe la luz solar convirtiéndola en energía eléctrica.</p>
+                  </div>
+                </div>
               </div>
-              <div class="small-12 medium-4 large-4 columns wow fadeIn" data-wow-duration="1s">
-                <img src="assets/img/servicios-icon2.png">
-                <p>El Inversor convierte la energía directa para que la puedas usar.</p>
+              <div class="small-12 medium-4 large-4 columns wow fadeIn" data-wow-duration="2s">
+                <div class="row">
+                  <div class="small-3 columns text-center">
+                    <img src="assets/img/servicios-icon2.png">
+                  </div>
+                  <div class="small-9 columns">
+                    <p>El Inversor convierte la energía directa para que la puedas usar.</p>
+                  </div>
+                </div>
               </div>
-              <div class="small-12 medium-4 large-4 columns wow fadeInLeft" data-wow-duration="1s" data-wow-offset="10">
-                <img src="assets/img/servicios-icon3.png">
-                <p>La producción excedente se distribuye hacia la red de CFE via el medidor bidireccional, misma que se regresará en horas de inactividad solar.</p>
+              <div class="small-12 medium-4 large-4 columns wow fadeInLeft" data-wow-duration="2s" data-wow-offset="10">
+                <div class="row">
+                  <div class="small-3 columns text-center">
+                    <img src="assets/img/servicios-icon3.png">
+                  </div>
+                  <div class="small-9 columns">
+                    <p>La producción excedente se distribuye hacia la red de CFE via el medidor bidireccional, misma que se regresará en horas de inactividad solar.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </section>
+      <div id="sub-servs" class="sub-servs" data-magellan-target="sub-servs">
+        <div class="venta-renta">
+          <div class="row align-center text-center info">
+            <div class="small-12 medium-8 large-8 columns transitions">
+              <h2 class="wow fadeInUp" data-wow-duration="1s">Servicio en residencias y empresas</h2>
+              <p class="wow fadeInDown" data-wow-duration="1s">Te ofrecemos la oportunidad de generar tu propia energía eléctrica<br> con un sistema fotovoltaico a un costo mucho más bajo.</p>
+              <div class="spacer"></div>
+            </div>
+          </div>
+
+          <div class="row align-center">
+            <div class="small-12 medium-8 large-8 columns">
+              
+              <div class="row align-center">
+                <div class="small-12 medium-8 large-8 columns wow fadeInLeft" data-wow-duration="1s" data-wow-offset="10">
+                  <h3 class="aqua">Venta de Paneles Solares</h3>
+                  <h4>Reduce hasta 90% tu recibo de luz</h4>
+                  <p>Te ofrecemos generar tu propia energía eléctrica con paneles solares con  un retorno de inversión</p>
+                  <p><b>Beneficios</b></p>
+                  <ul>
+                    <li>Ahorro de hasta 99% de la facturación eléctrica actual</li>
+                    <li>Retorno de inversión</li>
+                    <li>El costo de la energía eléctrica se congela; se hace independiente de los aumentos de tarifa de CFE</li>
+                    <li>El ahorro se incrementa con el tiempo</li>
+                    <li>Reducción de emisiones CO2 y otros gases contaminantes</li>
+                    <li>Proyección de imagen ambientalmente responsable</li>
+                  </ul>
+                </div>
+                <div class="small-12 medium-4 large-4 columns wow fadeInRight text-center" data-wow-duration="1s" data-wow-offset="10">
+                  <img src="assets/svg/icon-venta.svg">
+                </div>
+              </div>
+              <div class="spacer"></div>
+              <div class="row align-center">
+                <div class="small-12 medium-4 large-4 columns wow fadeInLeft text-center" data-wow-duration="1s" data-wow-offset="10">
+                  <img src="assets/svg/icon-renta.svg">
+                </div>
+                <div class="small-12 medium-8 large-8 columns wow fadeInRight" data-wow-duration="1s" data-wow-offset="10">
+                  <h3 class="aqua">Arrendamiento de paneles solares</h3>
+                  <h4>Reduce hasta 30% tu recibo de luz</h4>
+                  <p>Suncore pone esta inversión por ti instalando paneles para que produzcan la energía suficiente a la que actualmente consumes al mes. 
+                  <p>El costo de esta energía es más barata que la tarifa DAC, reduciendo el costo de CFE al mínimo y pagando por la energía hasta un 30% menos del costo de CFE. 
+                  <p>Los pagos es un monto determinado / fijo que se paga a plazos mensuales.</p>
+                  <p>Forma de pago .Tarjeta de Credito , Visa y Master Card</p>
+                  <p><b>Beneficios</b></p>
+                  <ul>
+                    <li>Ahorro inmediato del 30% de la facturación eléctrica actual</li>
+                    <li>Proyecto sin inversión alguna por parte del cliente</li>
+                    <li>El costo de la energía eléctrica se congela; se hace independiente de los aumentos de tarifa de CFE</li>
+                    <li>El ahorro se incremento con el tiempo</li>
+                    <li>Generación de certificados de energías limpias (CEL´s”) (monetizables)</li>
+                    <li>Reducción de emisiones CO2 y otros gases contaminantes</li>
+                    <li>Proyección de imagen ambientalmente responsable</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="spacer"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
 
       <section id="proceso" data-magellan-target="proceso">
         <div class="row align-center text-center">
@@ -172,11 +296,26 @@
             <p class="wow fadeInDown" data-wow-duration="1s">Así de fácil es obtener energía solar</p>
           </div>
         </div>
-        <div class="spacer"></div>
         <div class="row align-center text-center">
-          <div class="small-12 medium-8 large-8 columns wow fadeInDown" data-wow-duration="1s">
-            <p><img src="assets/img/proceso-icon.png"></p>
-            <p>Solicita tu cotización y mándanos tu último recibo de CFE.</p>
+          <div class="small-12 medium-3 large-3 columns wow fadeInDown" data-wow-duration="1s">
+            <h3><span>1</span></h3>
+            <p><img src="assets/svg/process1.svg"></p>
+            <p>Realizamos un estudio de tu consumo de luz</p>
+          </div>
+          <div class="small-12 medium-3 large-3 columns wow fadeInDown" data-wow-duration="1s">
+            <h3><span>2</span></h3>
+            <p><img src="assets/svg/process2.svg"></p>
+            <p>Diseñamos un sistema a tu medida</p>
+          </div>
+          <div class="small-12 medium-3 large-3 columns wow fadeInDown" data-wow-duration="1s">
+            <h3><span>3</span></h3>
+            <p><img src="assets/svg/process3.svg"></p>
+            <p>Aprobación del sistema por parte del cliente</p>
+          </div>
+          <div class="small-12 medium-3 large-3 columns wow fadeInDown" data-wow-duration="1s">
+            <h3><span>4</span></h3>
+            <p><img src="assets/svg/process4.svg"></p>
+            <p>Instalamos y ¡Listo!</p>
           </div>
         </div>
       </section>
@@ -189,11 +328,90 @@
           </div>
         </div>
         <div class="spacer"></div>
-        <div class="row align-center text-center">
-          <div class="small-12 medium-8 large-8 columns wow flipInX" data-wow-duration="1s">
-            <p><img src="assets/img/fakeslider.png"></p>
+        
+        <div class="row align-center">
+          <div class="small-10 columns">
+            <div class="orbit" role="region" aria-label=" " data-orbit>
+              <ul class="orbit-container">
+                <button class="orbit-previous"><span class="show-for-sr">Anterior</span>&#9664;&#xFE0E;</button>
+                <button class="orbit-next"><span class="show-for-sr">Siguiente</span>&#9654;&#xFE0E;</button>
+                <li class="is-active orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/01.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/02.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/03.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/04.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/05.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/06.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/07.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/08.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/09.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/10.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/11.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/12.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/13.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+                <li class="orbit-slide">
+                  <img class="orbit-image" src="assets/img/slider/14.png">
+                  <figcaption class="orbit-caption">Suncore</figcaption>
+                </li>
+              </ul>
+              <nav class="orbit-bullets">
+                <button class="is-active" data-slide="0"><span class="show-for-sr">Primera</span><span class="show-for-sr">Actual</span></button>
+                <button data-slide="1"><span class="show-for-sr">siguiente</span></button>
+                <button data-slide="2"><span class="show-for-sr">siguiente</span></button>
+                <button data-slide="3"><span class="show-for-sr">siguiente</span></button>
+                <button data-slide="4"><span class="show-for-sr">siguiente</span></button>
+                <button data-slide="5"><span class="show-for-sr">siguiente</span></button>
+                <button data-slide="6"><span class="show-for-sr">siguiente</span></button>
+                <button data-slide="7"><span class="show-for-sr">siguiente</span></button>
+                <button data-slide="8"><span class="show-for-sr">siguiente</span></button>
+                <button data-slide="9"><span class="show-for-sr">siguiente</span></button>
+                <button data-slide="10"><span class="show-for-sr">siguiente</span></button>
+                <button data-slide="11"><span class="show-for-sr">siguiente</span></button>
+                <button data-slide="12"><span class="show-for-sr">siguiente</span></button>
+                <button data-slide="13"><span class="show-for-sr">siguiente</span></button>
+              </nav>
+            </div>
           </div>
         </div>
+        
       </section>
 
       <section id="acerca" data-magellan-target="acerca">
@@ -314,11 +532,25 @@
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/what-input/dist/what-input.js"></script>
     <script src="bower_components/foundation-sites/dist/js/foundation.js"></script>
-    <script src="js/app.js"></script>
+    
     
     <script src="js/classie.js"></script>
     <script src="js/pathLoader.js"></script>
     <script src="js/main.js"></script>
+    
+    <script src="js/jquery.blueberry.js"></script>
 
+    <script src="js/photostack.js"></script>
+    <script>
+      // [].slice.call( document.querySelectorAll( '.photostack' ) ).forEach( function( el ) { new Photostack( el ); } );
+      
+      new Photostack( document.getElementById( 'photostack-full' ), {
+        callback : function( item ) {
+          //console.log(item)
+        }
+      } );
+    </script>
+
+    <script src="js/app.js"></script>
   </body>
 </html>

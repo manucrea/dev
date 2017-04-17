@@ -14,3 +14,10 @@ var wow = new WOW({
   boxClass: 'wow',
   animateClass: 'is-animating'
 }).init();
+
+$(window).load(function() {
+	$('.blueberry').blueberry({
+		hoverpause : true,
+		duration   : 1000
+	});
+});

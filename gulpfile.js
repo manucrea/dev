@@ -25,6 +25,6 @@ gulp.task('default', ['sass'], function() {
 });
 
 gulp.src('./src/scss/app.scss')
-  .pipe($.sass({
-    includePaths: ['node_modules/motion-ui/src']
-  }));
+.pipe($.sass({
+  includePaths: ['node_modules/motion-ui/src']
+}));
