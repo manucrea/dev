@@ -21,3 +21,11 @@ $(window).load(function() {
 		duration   : 1000
 	});
 });
+
+// $("#ventaBTN").click(function(){
+//   $("#venta").toggleClass("active");
+// });
+
+$(function() {
+  $('#va-accordion').vaccordion();
+});
