@@ -2,13 +2,13 @@ $(document).foundation();
 
 var elementPosition = $('#navigation').offset();
 
-$(window).scroll(function(){
-  if($(window).scrollTop() > elementPosition.top){
-    $('#navigation').addClass('fixed');
-  } else {
-    $('#navigation').removeClass('fixed');
-  }    
-});
+// $(window).scroll(function(){
+//   if($(window).scrollTop() > elementPosition.top){
+//     $('#navigation').addClass('fixed');
+//   } else {
+//     $('#navigation').removeClass('fixed');
+//   }    
+// });
 
 var wow = new WOW({
   boxClass: 'wow',
@@ -26,6 +26,6 @@ $(window).load(function() {
 //   $("#venta").toggleClass("active");
 // });
 
-$(function() {
-  $('#va-accordion').vaccordion();
-});
+// $(function() {
+//   $('#va-accordion').vaccordion();
+// });
